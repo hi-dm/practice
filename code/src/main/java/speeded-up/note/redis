@@ -1,0 +1,9 @@
+1.参考资料
+源码	https://github.com/huangz1990/redis-3.0-annotated	redis 3.0带注释的源码
+书籍	https://3.cn/eR4N7Vq	Redis深度历险：核心原理和应用实践
+书籍	https://3.cn/gTTMOSZ	Redis设计与实现(第二版)
+Blog	http://www.cnblogs.com/WJ5888/p/4371647.html	Redis内存回收:LRU算法
+Blog	http://blog.huangz.me/diary/2014/how-to-read-redis-source-code.html	Redis源码阅读的建议
+blog	http://www.blogjava.net/jinfeng_wang/archive/2016/12/14/432108.html	Raft协议实战之Redis Sentinel的选举Leader源码解析
+blog	https://www.cnblogs.com/huangfuyuan/p/9880379.html	
+redis主从复制下哨兵模式---选举原理
