@@ -1,6 +1,6 @@
-# 实战题
+# 刷题之路
 
-## 03课程 -Array 实战题目
+## 03课程 -Array 
 | 题号 | 题目 | 难度 |  java | scala | python | 
 | --- | --- | --- | --- | --- | --- |
 | 011 | [container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water/) | medium
