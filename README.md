@@ -1,17 +1,18 @@
 # 刷题之路
 
 ## 03课程1 -Array 
-| 题号 | 题目 | 难度 |  date1 | date2 | date3 | 
-| --- | --- | --- | --- | --- | --- |
+| 题号 | 题目 | 难度 |  date1 | date2 | date3 | 简要总结
+| --- | --- | --- | --- | --- | --- |---|
 | 011 | [container-with-most-water](https://leetcode-cn.com/problems/container-with-most-water/) | medium
 | 283 |[move-zeroes](https://leetcode-cn.com/problems/move-zeroes/)
 |  70 |[climbing-stairs](https://leetcode.com/problems/climbing-stairs/)
 | 15|[ 3sum](https://leetcode-cn.com/problems/3sum/)  
+| 26|[ remove-duplicates-from-sorted-array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)  |easy|2020-7-1| | | count简化移动次数 或双指针
 
 
 ## 03课程2 Linked List  
-| 题号 | 题目 | 难度 |  date1 | date2 | date3 | 
-| --- | --- | --- | --- | --- | --- |
+| 题号 | 题目 | 难度 |  date1 | date2 | date3 | 简要总结
+| --- | --- | --- | --- | --- | --- |---|
 | 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) | easy
 | 24|[ swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs)  |medium
 | 141|[ linked-list-cycle]( https://leetcode.com/problems/linked-list-cycle)  |easy
@@ -20,7 +21,7 @@
  
 课后作业
 
-https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
+
 https://leetcode-cn.com/problems/rotate-array/
 https://leetcode-cn.com/problems/merge-two-sorted-lists/
 https://leetcode-cn.com/problems/merge-sorted-array/
