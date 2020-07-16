@@ -33,21 +33,22 @@ class ThreeSum{
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
 		Arrays.sort(nums);
-		int left=0;
-		int mid=1;
-		int right=2;
+
+
+
 		List<List<Integer>> lists =new ArrayList<List<Integer>>();
-		for (int i = 0; i < nums.length-2; i++) {
-			left=i;
-			mid=i+1;
-			right=nums.length-1;
+		for (int i = 0; i < nums.length; i++) {
+			int left=i;
+			int mid=i+1;
+			int right=nums.length-1;
 
 			if (nums[i]>0){break;}
 			if (nums[right]<0){break;}
 			//去重 防止左侧的重复 [1,1,-2,2]
 			if(i>0 && nums[i-1]==nums[i]){continue;}
 			while (mid<right){
-				if (nums[left]+nums[mid]+nums[right]==0){
+				int sum=nums[left]+nums[mid]+nums[right];
+				if (sum==0){
 					List<Integer> list=new ArrayList<Integer>();
 					list.add(nums[left]);
 					list.add(nums[mid]);
@@ -64,7 +65,7 @@ class Solution {
 					mid=mid+1;
 					right=right-1;
 
-				}else if(nums[left]+nums[mid]+nums[right]<0){
+				}else if(sum<0){
 					mid+=1;
 				}else {
 					right-=1;
