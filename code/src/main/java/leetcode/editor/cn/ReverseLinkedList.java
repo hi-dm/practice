@@ -11,35 +11,30 @@ package leetcode.editor.cn;
 //你可以迭代或递归地反转链表。你能否用两种方法解决这道题？ 
 // Related Topics 链表
 
-
-/**
- * @author madanmei
- * @date 
- */
-public class ReverseLinkedList{
+//https://leetcode-cn.com/problems/reverse-linked-list
+class ReverseLinkedList{
 	public static void main(String[] args) {
 		Solution solution = new ReverseLinkedList().new Solution();
 		
 	}
+	public class ListNode {
+		int val;
+		ListNode next;
+		ListNode(int x) { val = x; }
+	}
 //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+
+
+
 class Solution {
     public ListNode reverseList(ListNode head) {
-		ListNode pre=null;
 		ListNode current=head;
-		while(current!=null){
+		ListNode pre=null;
+		while (current!=null){
 			ListNode temp=current.next;
 			current.next=pre;
 			pre=current;
 			current=temp;
-
 		}
 		return pre;
     }

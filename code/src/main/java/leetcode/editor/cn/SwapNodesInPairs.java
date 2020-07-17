@@ -12,41 +12,39 @@ package leetcode.editor.cn;
 // 
 // Related Topics 链表
 
+import java.util.List;
 
-/**
- * @author madanmei
- * @date 
- */
-public class SwapNodesInPairs{
+//https://leetcode-cn.com/problems/swap-nodes-in-pairs
+class SwapNodesInPairs{
 	public static void main(String[] args) {
 		Solution solution = new SwapNodesInPairs().new Solution();
 		
 	}
+
+	public class ListNode {
+		int val;
+		ListNode next;
+		ListNode(int x) { val = x; }
+	}
 //leetcode submit region begin(Prohibit modification and deletion)
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+
+
+
 class Solution {
     public ListNode swapPairs(ListNode head) {
+
 		ListNode pre=new ListNode(0);
 		pre.next=head;
 		ListNode current=pre;
-			while( current.next!=null && current.next.next!=null){
+		while (current.next!=null && current.next.next!=null){
 			ListNode start=current.next;
 			ListNode end=current.next.next;
 			current.next=end;
 			start.next=end.next;
-			current.next.next=start;
-
-			current=current.next.next;
-			//或current=start;
-			}
-		return pre.next;
+			end.next=start;
+			current=start;
+		}
+		return pre.next.next.next;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
