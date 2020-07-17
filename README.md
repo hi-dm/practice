@@ -30,3 +30,21 @@ https://leetcode-cn.com/problems/two-sum/
 https://leetcode-cn.com/problems/move-zeroes/
 https://leetcode-cn.com/problems/plus-one/
  
+ 
+ 
+_____
+>附项目leetcode 插件配置：
+>>P${question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})
+---
+>>//第${question.frontendQuestionId}题
+  //https://leetcode-cn.com/problems/${question.titleSlug}
+  ${question.content}
+  package leetcode.editor.cn;
+  //java:${question.title}
+  public class P${question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug}){
+      public static void main(String[] args){
+          Solution solution = new P${question.frontendQuestionId}$!velocityTool.camelCaseName(${question.titleSlug})().new Solution();
+      }
+      ${question.code}
+  }
+   
