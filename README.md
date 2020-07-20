@@ -43,7 +43,7 @@ _____
   //java:${question.title}
   public class P${question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug}){
       public static void main(String[] args){
-          Solution solution = new P${question.frontendQuestionId}$!velocityTool.camelCaseName(${question.titleSlug})().new Solution();
+          Solution solution = new P${question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})().new Solution();
       }
       ${question.code}
   }
