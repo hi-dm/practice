@@ -1,5 +1,5 @@
-package leetcode.editor.cn;
-
+//第11题
+//https://leetcode-cn.com/problems/container-with-most-water
 //给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, 
 //ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。 
 //
@@ -17,31 +17,37 @@ package leetcode.editor.cn;
 //
 // 输入：[1,8,6,2,5,4,8,3,7]
 //输出：49 
-// Related Topics 数组 双指针
+// Related Topics 数组 双指针 
+// 👍 1648 👎 0
 
-class ContainerWithMostWater {
+package leetcode.editor.cn;
+
+//java:盛最多水的容器
+public class P11_ContainerWithMostWater {
     public static void main(String[] args) {
-        Solution solution = new ContainerWithMostWater().new Solution();
-
+        Solution solution = new P11_ContainerWithMostWater().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int maxArea(int[] height) {
-            int i = 0,j = height.length - 1, m = 0;
-            while (i < j) {
-                int currentArea=(j - i) * Math.min(height[i], height[j]);
-                m = Math.max(m, currentArea);
-				if (height[i] < height[j]) {
-					i++;
-				} else {
-					j--;
-				}
+            int max = 0;
+            int left = 0;
+            int right = height.length - 1;
 
-			}
-            return m;
+            while (left < right) {
+                max = Math.max(max, (right-left)*Math.min(height[left],height[right]));
+                if (height[left] < height[right]) {
+                    left++;
+                } else {
+                    right--;
+                }
+            }
+            return max;
+
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
+ 
