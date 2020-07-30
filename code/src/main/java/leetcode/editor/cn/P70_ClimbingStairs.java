@@ -1,5 +1,5 @@
-package leetcode.editor.cn;
-
+//第70题
+//https://leetcode-cn.com/problems/climbing-stairs
 //假设你正在爬楼梯。需要 n 阶你才能到达楼顶。 
 //
 // 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？ 
@@ -23,34 +23,33 @@ package leetcode.editor.cn;
 //2.  1 阶 + 2 阶
 //3.  2 阶 + 1 阶
 // 
-// Related Topics 动态规划
+// Related Topics 动态规划 
+// 👍 1163 👎 0
 
-//https://leetcode-cn.com/problems/climbing-stairs
-class ClimbingStairs{
-	public static void main(String[] args) {
-		Solution solution = new ClimbingStairs().new Solution();
-		
-	}
-//leetcode submit region begin(Prohibit modification and deletion)
+package leetcode.editor.cn;
+//java:爬楼梯
+public class P70_ClimbingStairs{
+    public static void main(String[] args){
+        Solution solution = new P70_ClimbingStairs().new Solution();
+    }
+    //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int climbStairs(int n) {
-    	if (n==1){
-    		return 1;
-		}
-    	if (n==2){
-    		return 2;
-		}
-			int s1=1;
-			int s2=2;
-			int s3=3;
-		for (int i = 3; i <n ; i++) {
-			s1=s2;
-			s2=s3;
-			s3=s2+s1;
-		}
-		return s3;
+        if(n<=3){
+            return n;
+        }
+        int s1=1;
+        int s2=2;
+        int s3=3;
+        for (int i=3;i<n;i++){
+            s1=s2;
+            s2=s3;
+            s3=s1+s2;
+        }
+        return  s3;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
+ 
