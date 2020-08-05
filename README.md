@@ -1,4 +1,4 @@
-# 刷题之路
+# 百题斩
 
 > 03课程1 -Array 
 
@@ -18,9 +18,9 @@
 | ✔️️| 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) | easy|2020-06-25
 | ✔️️| 24|[ swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs)  |medium |2020-08-03|找到遍历的元素 找到头，判断当前的下一个 和下下一个
 | ✔️️| 141|[ linked-list-cycle]( https://leetcode.com/problems/linked-list-cycle)  |easy|2020-08-04|快慢指针，fast=fast.next.next 
-| | 142|[ linked-list-cycle-ii]( https://leetcode.com/problems/linked-list-cycle-ii)  |medium|2020-08-04|用set;还有一种方法公式推导的还没看明白😕
+| ✔️️| 142|[ linked-list-cycle-ii]( https://leetcode.com/problems/linked-list-cycle-ii)  |medium|2020-08-04|用set;还有一种方法公式推导的还没看明白😕
 | ✔️️| 143|[ linked-list-cycle-ii]( https://leetcode.com/problems/reorder-list)  |medium|2020-08-04|需要多练 组合了链表几个基本方法
-| | 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard
+| ✔️️| 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard|2020-08-05| 感觉这道题还需要练习100遍。。。
  
 课后作业
 
