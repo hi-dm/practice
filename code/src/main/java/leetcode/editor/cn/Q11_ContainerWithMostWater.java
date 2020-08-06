@@ -23,9 +23,9 @@
 package leetcode.editor.cn;
 
 //java:盛最多水的容器
-public class P11_ContainerWithMostWater {
+public class Q11_ContainerWithMostWater {
     public static void main(String[] args) {
-        Solution solution = new P11_ContainerWithMostWater().new Solution();
+        Solution solution = new Q11_ContainerWithMostWater().new Solution();
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)

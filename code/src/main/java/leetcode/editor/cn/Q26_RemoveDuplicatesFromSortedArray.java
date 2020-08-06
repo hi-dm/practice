@@ -47,9 +47,9 @@
 
 package leetcode.editor.cn;
 //java:删除排序数组中的重复项
-public class P26_RemoveDuplicatesFromSortedArray{
+public class Q26_RemoveDuplicatesFromSortedArray {
     public static void main(String[] args){
-        Solution solution = new P26_RemoveDuplicatesFromSortedArray().new Solution();
+        Solution solution = new Q26_RemoveDuplicatesFromSortedArray().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {

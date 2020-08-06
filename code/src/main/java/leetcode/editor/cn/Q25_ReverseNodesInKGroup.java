@@ -29,9 +29,9 @@
 
 package leetcode.editor.cn;
 //java:K 个一组翻转链表
-public class P25_ReverseNodesInKGroup{
+public class Q25_ReverseNodesInKGroup {
     public static void main(String[] args){
-        Solution solution = new P25_ReverseNodesInKGroup().new Solution();
+        Solution solution = new Q25_ReverseNodesInKGroup().new Solution();
     }
     public class ListNode {
         int val;

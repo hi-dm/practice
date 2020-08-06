@@ -17,9 +17,9 @@
 
 package leetcode.editor.cn;
 //java:重排链表
-public class P143_ReorderList{
+public class Q143_ReorderList {
     public static void main(String[] args){
-        Solution solution = new P143_ReorderList().new Solution();
+        Solution solution = new Q143_ReorderList().new Solution();
     }
     public class ListNode {
         int val;

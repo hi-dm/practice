@@ -28,9 +28,9 @@
 
 package leetcode.editor.cn;
 //java:爬楼梯
-public class P70_ClimbingStairs{
+public class Q70_ClimbingStairs {
     public static void main(String[] args){
-        Solution solution = new P70_ClimbingStairs().new Solution();
+        Solution solution = new Q70_ClimbingStairs().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {

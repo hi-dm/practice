@@ -18,15 +18,13 @@
 
 package leetcode.editor.cn;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 //java:两数之和
-public class P1_TwoSum{
+public class Q1_TwoSum {
     public static void main(String[] args){
-        Solution solution = new P1_TwoSum().new Solution();
+        Solution solution = new Q1_TwoSum().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {

@@ -24,13 +24,12 @@ package leetcode.editor.cn;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.EnumSet;
 import java.util.List;
 
 //java:三数之和
-public class P15_ThreeSum{
+public class Q15_ThreeSum {
     public static void main(String[] args){
-        Solution solution = new P15_ThreeSum().new Solution();
+        Solution solution = new Q15_ThreeSum().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {

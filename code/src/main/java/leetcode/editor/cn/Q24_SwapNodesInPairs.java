@@ -15,9 +15,9 @@
 
 package leetcode.editor.cn;
 //java:两两交换链表中的节点
-public class P24_SwapNodesInPairs{
+public class Q24_SwapNodesInPairs {
     public static void main(String[] args){
-        Solution solution = new P24_SwapNodesInPairs().new Solution();
+        Solution solution = new Q24_SwapNodesInPairs().new Solution();
     }
     /**
      * Definition for singly-linked list.

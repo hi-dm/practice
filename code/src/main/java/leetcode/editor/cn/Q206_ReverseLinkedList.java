@@ -14,9 +14,9 @@
 
 package leetcode.editor.cn;
 //java:反转链表
-public class P206_ReverseLinkedList{
+public class Q206_ReverseLinkedList {
     public static void main(String[] args){
-        Solution solution = new P206_ReverseLinkedList().new Solution();
+        Solution solution = new Q206_ReverseLinkedList().new Solution();
     }
     /**
      * Definition for singly-linked list.

@@ -18,9 +18,9 @@
 
 package leetcode.editor.cn;
 //java:移动零
-public class P283_MoveZeroes{
+public class Q283_MoveZeroes {
     public static void main(String[] args){
-        Solution solution = new P283_MoveZeroes().new Solution();
+        Solution solution = new Q283_MoveZeroes().new Solution();
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
