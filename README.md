@@ -24,6 +24,10 @@
  
 课后作业
 
+| 待办| 题号 | 题目 | 难度 |  date1 | date2 | 笔记 | 
+| --- | --- | --- | --- | --- | --- |--- |
+| ✔️️| 26 | [remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | easy|2020-08-06|写完了我才知道我用的是快慢指针
+
 https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/
 https://leetcode-cn.com/problems/rotate-array/
 https://leetcode-cn.com/problems/merge-two-sorted-lists/
