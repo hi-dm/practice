@@ -28,56 +28,62 @@
 // 👍 667 👎 0
 
 package leetcode.editor.cn;
+
 //java:K 个一组翻转链表
 public class Q25_ReverseNodesInKGroup {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution solution = new Q25_ReverseNodesInKGroup().new Solution();
     }
+
     public class ListNode {
         int val;
         ListNode next;
-        ListNode(int x) { val = x; }
+
+        ListNode(int x) {
+            val = x;
+        }
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
 
-class Solution {
-    public ListNode reverseKGroup(ListNode head, int k) {
-        ListNode dummy=new ListNode(0);
-        dummy.next=head;
+    class Solution {
+        public ListNode reverseKGroup(ListNode head, int k) {
+            ListNode dummy = new ListNode(0);
+            dummy.next = head;
 
-        ListNode pre=dummy;
-        ListNode end=dummy;
-        while (end.next!=null){
-            for (int j = 0; j < k && end!=null; j++) {
-                end=end.next;
+            ListNode pre = dummy;
+            ListNode end = dummy;
+            while (end.next != null) {
+                for (int i = 0; i < k && end != null; i++) {
+                    end = end.next;
+                }
+                if (end == null) {
+                    break;
+                }
+                ListNode start = pre.next;
+                ListNode tmp = end.next;
+                end.next = null;
+                pre.next = revers(start);
+                start.next = tmp;
+                pre = start;
+                end = start;
             }
-            if (end==null){
-                break;
-            }
-                ListNode next=end.next;
-                ListNode start=pre.next;
-                end.next=null;
-                pre.next=revers(start);
-                start.next=next;
-                pre=start;
-                end=pre;
+            return dummy.next;
         }
-        return dummy.next;
-    }
 
-    private ListNode revers(ListNode head) {
-        ListNode pre=null;
-        ListNode curr=head;
-        while (curr!=null){
-            ListNode next=curr.next;
-            curr.next=pre;
-            pre=curr;
-            curr=next;
+        private ListNode revers(ListNode head) {
+            //97遍
+            ListNode pre = null;
+            ListNode curr = head;
+            while (curr != null) {
+                ListNode next = curr.next;
+                curr.next = pre;
+                pre = curr;
+                curr = next;
+            }
+            return pre;
         }
-        return pre;
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
