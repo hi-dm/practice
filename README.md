@@ -20,15 +20,15 @@
 | ✔️️| 141|[ linked-list-cycle]( https://leetcode.com/problems/linked-list-cycle)  |easy|2020-08-04|快慢指针，fast=fast.next.next 
 | ✔️️| 142|[ linked-list-cycle-ii]( https://leetcode.com/problems/linked-list-cycle-ii)  |medium|2020-08-04|用set;还有一种方法公式推导的还没看明白😕
 | ✔️️| 143|[ linked-list-cycle-ii]( https://leetcode.com/problems/reorder-list)  |medium|2020-08-04|需要多练 组合了链表几个基本方法
-| ✔️️| 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard|2020-08-05| 感觉这道题还需要练习97遍。。。
+| ✔️️| 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard|2020-08-05| 感觉这道题还需要练习96遍。。。
  
 课后作业
 
 | 待办| 题号 | 题目 | 难度 |  date1 | date2 | 笔记 | 
 | --- | --- | --- | --- | --- | --- |--- |
 | ✔️️| 26 | [remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | easy|2020-08-06|写完了我才知道我用的是快慢指针
+| ✔️️| 189 | [rotate-array](https://leetcode.com/problems/rotate-array/) | easy but to me ,its hard 😭|2020-08-11|  被while条件搞蒙了，看答案却用的do while 是比我的好
 
- https://leetcode-cn.com/problems/rotate-array/ TODO:
 https://leetcode-cn.com/problems/merge-two-sorted-lists/
 https://leetcode-cn.com/problems/merge-sorted-array/
 https://leetcode-cn.com/problems/two-sum/
