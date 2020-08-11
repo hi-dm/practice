@@ -29,7 +29,7 @@
 | ✔️️| 26 | [remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | easy|2020-08-06|写完了我才知道我用的是快慢指针
 | ✔️️| 189 | [rotate-array](https://leetcode.com/problems/rotate-array/) | easy but to me ,its hard 😭|2020-08-11|  被while条件搞蒙了，看答案却用的do while 是比我的好
 
-https://leetcode-cn.com/problems/merge-two-sorted-lists/
+https://leetcode-cn.com/problems/merge-two-sorted-lists/ TODO:弄错了 弄成反转了
 https://leetcode-cn.com/problems/merge-sorted-array/
 https://leetcode-cn.com/problems/two-sum/
 https://leetcode-cn.com/problems/move-zeroes/
