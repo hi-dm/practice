@@ -30,6 +30,13 @@
 // 👍 652 👎 0
 
 package leetcode.editor.cn;
+
+import com.oracle.javafx.jmx.json.impl.JSONMessages;
+import jdk.nashorn.internal.parser.JSONParser;
+
+import java.util.HashSet;
+import java.util.Set;
+
 //java:旋转数组
 public class Q189_RotateArray{
     public static void main(String[] args){
@@ -37,7 +44,7 @@ public class Q189_RotateArray{
         System.out.println(3%5);
 
         Solution solution = new Q189_RotateArray().new Solution();
-        solution.rotate(new int[]{1,2,3,4,5,6,7},3);
+        solution.rotate(new int[]{-1,-100,3,99},2);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -45,24 +52,20 @@ class Solution {
         if (nums.length==0){
             return;
         }
-
-        int i=0;
+        k = k % nums.length;
         int count=0;
-        int curr=nums[0];
-
-        while (count<nums.length){
-            int t=getTargetIndex(i,k,nums.length);
-            int tmp=nums[t];
-            nums[t]=curr;
-            curr=tmp;
-            i=t;
-            count++;
-            System.out.println("=="+t);
-            for (int j = 0; j <nums.length ; j++) {
-                System.out.print(nums[j]);
-            }
+        for (int start = 0; count <nums.length ; start++) {
+            int current=start;
+            int prev=nums[start];
+            do{
+                int next=getTargetIndex(current,k,nums.length);
+                int tmp=nums[next];
+                nums[next]=prev;
+                prev=tmp;
+                current=next;
+                count++;
+            }while (start != current);
         }
-
     }
 
     private int getTargetIndex(int curr, int step,int length){
