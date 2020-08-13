@@ -36,9 +36,11 @@ public class Q21_MergeTwoSortedLists {
             this.next = next;
         }
     }
+    //
     //leetcode submit region begin(Prohibit modification and deletion)
 
     class Solution {
+        //时间复杂度：O(n + m)O(n+m)  空间复杂度：O(1)O(1)
         public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
             ListNode pre = new ListNode(0);
             ListNode dummy = pre;
