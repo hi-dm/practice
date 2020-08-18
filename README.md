@@ -39,7 +39,13 @@
 | --- | --- | --- | --- | --- | --- |--- |
 |✔️|155|[min-stack](https://leetcode-cn.com/problems/min-stack)|easy|easy||
 |️|242 | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |  | | |
+|️|  | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) |  | | |
+|️|  | [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) |  | | |
+|️| | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |  | | |
+|️| | [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) |  | | |
+|️| | [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) |  | | |
 
+ 
 _____
 >附项目leetcode 插件配置：
 >>P${question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})
