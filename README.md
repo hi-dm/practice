@@ -38,10 +38,9 @@
 | 待办| 题号 | 题目 | 难度 |  date1 | date2 | 笔记 | 
 | --- | --- | --- | --- | --- | --- |--- |
 |✔️|155|[min-stack](https://leetcode-cn.com/problems/min-stack)|easy|easy||
-|️|242 | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |  | | |
+|✔️️|242 | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |easy  |解答思路设计挺巧妙的 s.charAt(i) - 'a' 保证了数组26个元素就可以 有点优秀 | |
 |️|  | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) |  | | |
 |️|  | [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) |  | | |
-|️| | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |  | | |
 |️| | [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) |  | | |
 |️| | [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) |  | | |
 
