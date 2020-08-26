@@ -42,59 +42,119 @@
 // 👍 55 👎 0
 
 package leetcode.editor.cn;
+
 //java:设计循环双端队列
-public class Q641_DesignCircularDeque{
-    public static void main(String[] args){
-        MyCircularDeque solution = new Q641_DesignCircularDeque().new MyCircularDeque();
+public class Q641_DesignCircularDeque {
+    public static void main(String[] args) {
+
+        //   Solution solution = new Q641_DesignCircularDeque().new Solution();
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
-class MyCircularDeque {
+    class MyCircularDeque {
+        int[] myQueue;
+        int size;
+        int front;
+        int rear;
+        int capacity;
 
-    /** Initialize your data structure here. Set the size of the deque to be k. */
-    public MyCircularDeque(int k) {
+        /**
+         * Initialize your data structure here. Set the size of the deque to be k.
+         */
+        public MyCircularDeque(int k) {
+            myQueue = new int[k];
+            this.capacity = k;
+            this.size = 0;
+            this.front = 0;
+            this.rear = 0;
+        }
 
+        /**
+         * Adds an item at the front of Deque. Return true if the operation is successful.
+         */
+        public boolean insertFront(int value) {
+            if (rear == front || size == capacity) {
+                return false;
+            }
+            front = (front + capacity - 1) % capacity;
+            myQueue[front] = value;
+
+            this.size++;
+            return true;
+        }
+
+        /**
+         * Adds an item at the rear of Deque. Return true if the operation is successful.
+         */
+        public boolean insertLast(int value) {
+            if (rear == front || size == capacity) {
+                return false;
+            }
+            rear = (rear + capacity + 1) % capacity;
+            myQueue[rear] = value;
+            this.size++;
+            return true;
+        }
+
+        /**
+         * Deletes an item from the front of Deque. Return true if the operation is successful.
+         */
+        public boolean deleteFront() {
+            if (rear == front || size == 0) {
+                return false;
+            }
+            front = (front + 1) % capacity;
+            size--;
+            return true;
+        }
+
+        /**
+         * Deletes an item from the rear of Deque. Return true if the operation is successful.
+         */
+        public boolean deleteLast() {
+            if (rear == front || size == 0) {
+                return false;
+            }
+
+            rear = (rear - 1 + capacity) % capacity;
+            size--;
+            return true;
+        }
+
+        /**
+         * Get the front item from the deque.
+         */
+        public int getFront() {
+            if (rear == front) {
+                return -1;
+            }
+            return myQueue[front];
+        }
+
+        /**
+         * Get the last item from the deque.
+         */
+        public int getRear() {
+            if (rear == front) {
+                return -1;
+            }
+            return myQueue[rear];
+        }
+
+        /**
+         * Checks whether the circular deque is empty or not.
+         */
+        public boolean isEmpty() {
+            return rear == front && size == 0;
+        }
+
+        /**
+         * Checks whether the circular deque is full or not.
+         */
+        public boolean isFull() {
+            return rear != front && capacity == size;
+        }
     }
-    
-    /** Adds an item at the front of Deque. Return true if the operation is successful. */
-    public boolean insertFront(int value) {
-
-    }
-    
-    /** Adds an item at the rear of Deque. Return true if the operation is successful. */
-    public boolean insertLast(int value) {
-
-    }
-    
-    /** Deletes an item from the front of Deque. Return true if the operation is successful. */
-    public boolean deleteFront() {
-
-    }
-    
-    /** Deletes an item from the rear of Deque. Return true if the operation is successful. */
-    public boolean deleteLast() {
-
-    }
-    
-    /** Get the front item from the deque. */
-    public int getFront() {
-
-    }
-    
-    /** Get the last item from the deque. */
-    public int getRear() {
-
-    }
-    
-    /** Checks whether the circular deque is empty or not. */
-    public boolean isEmpty() {
-
-    }
-    
-    /** Checks whether the circular deque is full or not. */
-    public boolean isFull() {
-
-    }
-}
 
 /**
  * Your MyCircularDeque object will be instantiated and called as such:
