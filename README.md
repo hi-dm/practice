@@ -41,7 +41,7 @@
 |✔️️|242 | [valid-anagram](https://leetcode-cn.com/problems/valid-anagram/) |easy  |解答思路设计挺巧妙的 s.charAt(i) - 'a' 保证了数组26个元素就可以 有点优秀 | |
 |️× |84  | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | hard |这道题答得不对。。 一上来就以为和之前见过的题一样 审题审题 | |
 |️|  239| [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) | hard | | |
-|️| 641| [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) |  | | |
+|✔️| 641| [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) | mid |被边界条件搞蒙了 还有rear 和 front 的意义不同 | |
 |️| | [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) |  | | |
 
  
