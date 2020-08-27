@@ -33,21 +33,16 @@ public class Q66_PlusOne {
     //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         public int[] plusOne(int[] digits) {
-            int plus = 1;
             for (int i = digits.length - 1; i >= 0; i--) {
-                if (digits[i] + plus == 10) {
-                    plus = 1;
+                if (digits[i] + 1 == 10) {
                     digits[i] = 0;
                 } else {
                     digits[i] = digits[i] + 1;
-                    plus = 0;
-                    break;
+                    return digits;
                 }
             }
-            if (plus == 1) {
-                digits = new int[digits.length + 1];
-                digits[0] = 1;
-            }
+            digits = new int[digits.length + 1];
+            digits[0] = 1;
             return digits;
         }
     }
