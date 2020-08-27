@@ -21,6 +21,7 @@
 | ✔️️| 142|[ linked-list-cycle-ii]( https://leetcode.com/problems/linked-list-cycle-ii)  |medium|2020-08-04|用set;还有一种方法公式推导的还没看明白😕
 | ✔️️| 143|[ linked-list-cycle-ii]( https://leetcode.com/problems/reorder-list)  |medium|2020-08-04|需要多练 组合了链表几个基本方法
 | ✔️️| 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard|2020-08-05| 感觉这道题还需要练习96遍。。。
+| ✔️️| 88|[merge-sorted-array]( https://leetcode-cn.com/problems/merge-sorted-array)  |easy|2020-08-27| 从后向前，注意数组为空
  
 课后作业
 
@@ -42,7 +43,7 @@
 |️× |84  | [largest-rectangle-in-histogram](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | hard |这道题答得不对。。 一上来就以为和之前见过的题一样 审题审题 | |
 |️|  239| [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) | hard | | |
 |✔️| 641| [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) | mid |被边界条件搞蒙了 还有rear 和 front 的意义不同 | |
-|️| | [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) |  | | |
+|️| 42| [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) | hard | 先放一放吧| |
 
  
 _____
