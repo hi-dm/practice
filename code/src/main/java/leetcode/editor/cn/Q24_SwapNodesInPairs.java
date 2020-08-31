@@ -14,40 +14,47 @@
 // 👍 571 👎 0
 
 package leetcode.editor.cn;
+
 //java:两两交换链表中的节点
 public class Q24_SwapNodesInPairs {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution solution = new Q24_SwapNodesInPairs().new Solution();
     }
+
     /**
      * Definition for singly-linked list.
-     *  */
+     */
     public class ListNode {
         int val;
         ListNode next;
-        ListNode(int x) { val = x; }
+
+        ListNode(int x) {
+            val = x;
+        }
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
 
-class Solution {
-    public ListNode swapPairs(ListNode head) {
-    ListNode pre=new ListNode(0);
-    pre.next=head;
-    ListNode current=pre;
+    class Solution {
+        public ListNode swapPairs(ListNode head) {
+            if (head == null || head.next == null) {
+                return head;
+            }
+            ListNode pre = new ListNode(0);
+            ListNode current = pre;
+            pre.next = head;
 
-    while (current.next!=null && current.next.next!=null){
-        ListNode start=current.next;
-        ListNode end=current.next.next;
-        start.next=end.next;
-        end.next=start;
-        current.next=end;
-        current=start;
+            while (current.next!=null && current.next.next!=null){
+                ListNode start=current.next;
+                ListNode end=current.next.next;
+                current.next=end;
+                start.next=end.next;
+                end.next=start;
+                current=start;
+            }
+            return pre.next;
+        }
     }
-    return pre.next;
-    }
-
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
