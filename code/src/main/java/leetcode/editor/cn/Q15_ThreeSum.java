@@ -28,12 +28,52 @@ import java.util.List;
 
 //java:三数之和
 public class Q15_ThreeSum {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution solution = new Q15_ThreeSum().new Solution();
     }
+
     //leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
+    class Solution {
+        public List<List<Integer>> threeSum(int[] nums) {
+            if (nums == null || nums.length < 3) {
+                return new ArrayList<>();
+            }
+
+            Arrays.sort(nums);
+            List<List<Integer>> result = new ArrayList<>();
+            for (int i = 0; i < nums.length - 2; i++) {
+                int j = i + 1;
+                int k = nums.length - 1;
+                if (i > 0 && nums[i - 1] == nums[i]) {
+                    continue;
+                }
+
+                while (j < k) {
+                    int sum = nums[i] + nums[j] + nums[k];
+                    if (sum > 0) {
+                        k--;
+                    } else if (sum < 0) {
+                        j++;
+                    } else {
+                        List<Integer> list = new ArrayList<>();
+                        list.add(nums[i]);
+                        list.add(nums[j]);
+                        list.add(nums[k]);
+                        result.add(list);
+                        while (j < k && nums[j] == nums[j + 1]) {
+                            j++;
+                        }
+                        while (j < k && nums[k] == nums[k - 1]) {
+                            k--;
+                        }
+                        j++;
+                        k--;
+                    }
+                }
+            }
+            return result;
+
+
 //        if (nums==null|| nums.length<3){
 //            return new ArrayList<>();
 //        }
@@ -76,51 +116,51 @@ class Solution {
 //
 //        }
 //        return result;
-
-        Arrays.sort(nums);
-
-
-
-        List<List<Integer>> lists =new ArrayList<List<Integer>>();
-        for (int i = 0; i < nums.length; i++) {
-            int left=i;
-            int mid=i+1;
-            int right=nums.length-1;
-
-            if (nums[i]>0){break;}
-            if (nums[right]<0){break;}
-            //去重 防止左侧的重复 [1,1,-2,2]
-            if(i>0 && nums[i-1]==nums[i]){continue;}
-            while (mid<right){
-                int sum=nums[left]+nums[mid]+nums[right];
-                if (sum==0){
-                    List<Integer> list=new ArrayList<Integer>();
-                    list.add(nums[left]);
-                    list.add(nums[mid]);
-                    list.add(nums[right]);
-                    lists.add(list);
-
-                    //去重:[-2,0,0,2,2] 防止 [[-2,0,2],[-2,0,2]]
-                    while (mid<right && nums[mid]==nums[mid+1]){
-                        mid=mid+1;
-                    }
-                    while (mid<right && nums[right]==nums[right-1]){
-                        right=right-1;
-                    }
-                    mid=mid+1;
-                    right=right-1;
-
-                }else if(sum<0){
-                    mid+=1;
-                }else {
-                    right-=1;
-                }
-            }
-
+//=======================================================
+//        Arrays.sort(nums);
+//
+//
+//
+//        List<List<Integer>> lists =new ArrayList<List<Integer>>();
+//        for (int i = 0; i < nums.length; i++) {
+//            int left=i;
+//            int mid=i+1;
+//            int right=nums.length-1;
+//
+//            if (nums[i]>0){break;}
+//            if (nums[right]<0){break;}
+//            //去重 防止左侧的重复 [1,1,-2,2]
+//            if(i>0 && nums[i-1]==nums[i]){continue;}
+//            while (mid<right){
+//                int sum=nums[left]+nums[mid]+nums[right];
+//                if (sum==0){
+//                    List<Integer> list=new ArrayList<Integer>();
+//                    list.add(nums[left]);
+//                    list.add(nums[mid]);
+//                    list.add(nums[right]);
+//                    lists.add(list);
+//
+//                    //去重:[-2,0,0,2,2] 防止 [[-2,0,2],[-2,0,2]]
+//                    while (mid<right && nums[mid]==nums[mid+1]){
+//                        mid=mid+1;
+//                    }
+//                    while (mid<right && nums[right]==nums[right-1]){
+//                        right=right-1;
+//                    }
+//                    mid=mid+1;
+//                    right=right-1;
+//
+//                }else if(sum<0){
+//                    mid+=1;
+//                }else {
+//                    right-=1;
+//                }
+//            }
+//
+//        }
+//        return lists;
         }
-        return lists;
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
