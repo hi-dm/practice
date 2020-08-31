@@ -1,4 +1,6 @@
 # 百题斩
+如果有什么不开心，就刷题吧~
+刷完题不就开心了~
 
 > 03课程1 -Array 
 
@@ -8,7 +10,7 @@
 |✔️| 283 |[move-zeroes](https://leetcode-cn.com/problems/move-zeroes/)|easy|2020-06-24|2020-07-28|计数后二次遍历，或边计数边赋值
 |✔️|  70 |[climbing-stairs](https://leetcode.com/problems/climbing-stairs/)|easy|2020-06-24|2020-07-30|保留有效两个值，注意边界 代入4验证
 |✔️| 15|[ 3sum](https://leetcode-cn.com/problems/3sum/)  |easy|2020-06-24|2020-07-30|需加强练习，注意边界，注意用i 还是nums[i],注意优化。
-|✔️| 1|[twosum](https://leetcode-cn.com/problems/two-sum) |easy|2020-08-03| 我们很容易想到用map，然后循环两次 ,却很少想起 一次就行
+|✔️| 1|[twosum](https://leetcode-cn.com/problems/two-sum) |easy|2020-08-03| 我们很容易想到用map，然后循环两次 ,却很少想起 一次就行| 之后不用刷了
 |✔️| 66|[plus-one](https://leetcode-cn.com/problems/plus-one) |easy|2020-08-03| 加1进位  digits = new int[digits.length + 1];  digits[0] = 1;
 
 

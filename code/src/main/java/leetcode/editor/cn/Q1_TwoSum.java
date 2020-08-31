@@ -29,16 +29,15 @@ public class Q1_TwoSum {
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        if (nums==null){
+        if (nums==null || nums.length<=0){
             return null;
         }
-        Map<Integer,Integer> map=new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int value=target-nums[i];
-            if (map.containsKey(value)){
-                return new int[]{map.get(value),i};
+        Map<Integer,Integer> map=new HashMap();
+        for (int i = 0; i < nums.length ; i++) {
+            if (map.containsKey(nums[i])){
+                return new int[]{map.get(nums[i]),i};
             }else {
-                map.put(nums[i],i);
+                map.put(target-nums[i],i);
             }
         }
         return null;
