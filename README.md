@@ -25,6 +25,7 @@
 | ✔️️| 143|[ linked-list-cycle-ii]( https://leetcode.com/problems/reorder-list)  |medium|2020-08-04|需要多练 组合了链表几个基本方法
 | ✔️️| 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard|2020-08-05| 感觉这道题还需要练习96遍。。。
 | ✔️️| 88|[merge-sorted-array]( https://leetcode-cn.com/problems/merge-sorted-array)  |easy|2020-08-27| 从后向前，注意数组为空
+| ✔️️| 21|[merge-two-sorted-lists]( https://leetcode-cn.com/problems/merge-two-sorted-lists)  |easy|2020-08-11| 善于利用dummy 和pre,并且不是所有场景都有必要重新创建curr
  
 课后作业
 
