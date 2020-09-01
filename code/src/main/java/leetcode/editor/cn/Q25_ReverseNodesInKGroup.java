@@ -32,10 +32,22 @@ package leetcode.editor.cn;
 //java:K 个一组翻转链表
 public class Q25_ReverseNodesInKGroup {
     public static void main(String[] args) {
+        ListNode head=new ListNode(1);
+        ListNode a=new ListNode(2);
+        ListNode b=new ListNode(3);
+        ListNode c=new ListNode(4);
+        ListNode d=new ListNode(5);
+        head.next=a;
+        a.next=b;
+        b.next=c;
+        c.next=d;
+
+
         Solution solution = new Q25_ReverseNodesInKGroup().new Solution();
+        solution.reverseKGroup(head,2);
     }
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
 
@@ -45,6 +57,51 @@ public class Q25_ReverseNodesInKGroup {
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
+
+    /*class Solution {
+        public   ListNode reverseKGroup(ListNode head, int k) {
+            ListNode pre=new ListNode(0);
+            ListNode dummy=pre ;
+            pre.next=head;
+
+            int i=1;
+            ListNode current=head;
+            ListNode start=head;
+            while (current!=null){
+
+                if (i == k){
+                    ListNode end=current;
+                    ListNode next=current.next;
+                    end.next=null;
+                    pre.next= revers(start);
+                    current.next=next;
+                    start=current;
+                    pre=current;
+                    i=0;
+                }
+                current=current.next;
+                i++;
+            }
+            return dummy.next;
+        }
+
+        private ListNode revers(ListNode head) {
+            if (head==null || head.next==null){
+                return head;
+            }
+            ListNode pre=null;
+            while (head!=null ){
+                ListNode tmp=head.next;
+                head.next=pre;
+                pre=head;
+                head=tmp;
+            }
+            return pre;
+        }
+    }
+
+
+*/
 
     class Solution {
         public ListNode reverseKGroup(ListNode head, int k) {
