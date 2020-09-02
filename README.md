@@ -31,7 +31,7 @@
 
 | 待办| 题号 | 题目 | 难度 |  date1 | 备注 | data2 | 
 | --- | --- | --- | --- | --- | --- |--- |
-| ✔️️| 26 | [remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | easy|2020-08-06|写完了我才知道我用的是快慢指针
+| ✔️️| 26 | [remove-duplicates-from-sorted-array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | easy|2020-08-06|写完了我才知道我用的是快慢指针|哦也 一次过的哦
 | ✔️️| 189 | [rotate-array](https://leetcode.com/problems/rotate-array/) | easy but to me ,its hard 😭|2020-08-11|  被while条件搞蒙了，看答案却用的do while 是比我的好
 | ️️|   | [merge-two-sorted-lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |easy|弄错了 弄成反转了
 | ️️|   | [merge-sorted-array](https://leetcode-cn.com/problems/merge-sorted-array/) | | 
