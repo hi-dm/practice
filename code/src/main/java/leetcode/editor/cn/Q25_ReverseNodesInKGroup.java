@@ -57,52 +57,6 @@ public class Q25_ReverseNodesInKGroup {
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 
-
-    /*class Solution {
-        public   ListNode reverseKGroup(ListNode head, int k) {
-            ListNode pre=new ListNode(0);
-            ListNode dummy=pre ;
-            pre.next=head;
-
-            int i=1;
-            ListNode current=head;
-            ListNode start=head;
-            while (current!=null){
-
-                if (i == k){
-                    ListNode end=current;
-                    ListNode next=current.next;
-                    end.next=null;
-                    pre.next= revers(start);
-                    current.next=next;
-                    start=current;
-                    pre=current;
-                    i=0;
-                }
-                current=current.next;
-                i++;
-            }
-            return dummy.next;
-        }
-
-        private ListNode revers(ListNode head) {
-            if (head==null || head.next==null){
-                return head;
-            }
-            ListNode pre=null;
-            while (head!=null ){
-                ListNode tmp=head.next;
-                head.next=pre;
-                pre=head;
-                head=tmp;
-            }
-            return pre;
-        }
-    }
-
-
-*/
-
     class Solution {
         public ListNode reverseKGroup(ListNode head, int k) {
             ListNode dummy = new ListNode(0);
