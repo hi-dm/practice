@@ -20,7 +20,7 @@
 | --- | --- | --- | --- | --- | --- |--- |
 | ✔️️| 206 | [reverse-linked-list](https://leetcode.com/problems/reverse-linked-list/) | easy|2020-06-25
 | ✔️️| 24|[ swap-nodes-in-pairs](https://leetcode.com/problems/swap-nodes-in-pairs)  |medium |2020-08-03|找到遍历的元素 找到头，判断当前的下一个 和下下一个 还需要联系！！
-| ✔️️| 141|[ linked-list-cycle]( https://leetcode.com/problems/linked-list-cycle)  |easy|2020-08-04|快慢指针，fast=fast.next.next 
+| ✔️️| 141|[ linked-list-cycle]( https://leetcode.com/problems/linked-list-cycle)  |easy|2020-08-04|快慢指针，fast=fast.next.next ，fast==slow 对比是不是同一个元素
 | ✔️️| 142|[ linked-list-cycle-ii]( https://leetcode.com/problems/linked-list-cycle-ii)  |medium|2020-08-04|用set;还有一种方法公式推导的还没看明白😕
 | ✔️️| 143|[ linked-list-cycle-ii]( https://leetcode.com/problems/reorder-list)  |medium|2020-08-04|需要多练 组合了链表几个基本方法
 | ✔️️| 25|[ reverse-nodes-in-k-group]( https://leetcode.com/problems/reverse-nodes-in-k-group/)  |hard|2020-08-05| 感觉这道题还需要练习94遍。。。
@@ -50,6 +50,11 @@
 |️| 42| [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) | hard | 先放一放吧| |
 
  
+ 
+笔记：
+
+1 nums1[p1+p2+1] = nums1[p1]>nums2[p2]?nums1[p1--]:nums2[p2--];
+
 _____
 >附项目leetcode 插件配置：
 >>P${question.frontendQuestionId}_$!velocityTool.camelCaseName(${question.titleSlug})

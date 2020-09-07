@@ -72,7 +72,7 @@ public class Q141_LinkedListCycle {
             ListNode fast = head.next;
             ListNode slow = head;
             while (fast != null && fast.next != null) {
-                if (fast.val == slow.val) {
+                if (fast==slow) {
                     return true;
                 }
                 fast = fast.next.next;
