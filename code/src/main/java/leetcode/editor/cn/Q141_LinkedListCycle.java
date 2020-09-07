@@ -42,17 +42,20 @@
 // 👍 700 👎 0
 
 package leetcode.editor.cn;
+
 //java:环形链表
 public class Q141_LinkedListCycle {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Solution solution = new Q141_LinkedListCycle().new Solution();
     }
+
     /**
      * Definition for singly-linked list.
-     *  */
+     */
     class ListNode {
         int val;
         ListNode next;
+
         ListNode(int x) {
             val = x;
             next = null;
@@ -61,26 +64,23 @@ public class Q141_LinkedListCycle {
     //leetcode submit region begin(Prohibit modification and deletion)
 
 
-public class Solution {
-    public boolean hasCycle(ListNode head) {
-        if (null==head){
+    public class Solution {
+        public boolean hasCycle(ListNode head) {
+            if (null == head) {
+                return false;
+            }
+            ListNode fast = head.next;
+            ListNode slow = head;
+            while (fast != null && fast.next != null) {
+                if (fast.val == slow.val) {
+                    return true;
+                }
+                fast = fast.next.next;
+                slow = slow.next;
+            }
             return false;
         }
-        ListNode fast=head.next;
-        ListNode slow=head;
-        while (fast!=null && fast.next!=null){
-            if (fast.val==slow.val){
-                return true;
-            }else {
-                if(fast.next!=null){
-                    fast=fast.next.next;
-                    slow=slow.next;
-                }
-            }
-        }
-        return false;
     }
-}
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
