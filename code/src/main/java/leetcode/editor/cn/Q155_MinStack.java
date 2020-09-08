@@ -64,9 +64,12 @@ class MinStack {
     public void push(int x) {
         stack.push(x);
 
-        Integer before= minStack.isEmpty()?null:minStack.peek();
-        Integer min=before==null ? x:Math.min(before,x);
-        minStack.push(min);
+        if (minStack.isEmpty() ){
+            minStack.push(x);
+        }else {
+            Integer min=Math.min(minStack.peek(),x);
+            minStack.push(min);
+        }
     }
     
     public void pop() {
