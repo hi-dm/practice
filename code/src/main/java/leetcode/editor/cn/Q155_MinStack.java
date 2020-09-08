@@ -53,33 +53,35 @@ public class Q155_MinStack{
     //leetcode submit region begin(Prohibit modification and deletion)
 class MinStack {
        private Stack<Integer> stack;
-       private Stack<Integer> min_stack;
+       private Stack<Integer> minStack;
 
         /** initialize your data structure here. */
     public MinStack() {
-        stack = new Stack<>();
-        min_stack = new Stack<>();
+       stack=new Stack<>();
+        minStack=new Stack<>();
     }
     
     public void push(int x) {
         stack.push(x);
-       if(min_stack.isEmpty() || min_stack.peek()>=x){
-           min_stack.push(x);
-       }
+
+        Integer before= minStack.isEmpty()?null:minStack.peek();
+        Integer min=before==null ? x:Math.min(before,x);
+        minStack.push(min);
     }
     
     public void pop() {
-        if (stack.pop().equals(min_stack.peek())){
-            min_stack.pop();
+        if (!stack.isEmpty()){
+            stack.pop();
+            minStack.pop();
         }
     }
     
     public int top() {
-        return stack.peek();
+           return stack.peek();
     }
     
     public int getMin() {
-        return min_stack.peek();
+           return minStack.peek();
     }
 }
 
