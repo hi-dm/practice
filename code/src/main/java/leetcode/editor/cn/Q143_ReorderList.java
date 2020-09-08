@@ -45,7 +45,60 @@ class Solution {
         merge(left,right);
     }
 
-    private void merge(ListNode left, ListNode right) {
+    private ListNode revers(ListNode node){
+        if (node==null || node.next==null){
+            return  node;
+        }
+
+        ListNode pre=null;
+        ListNode current=node;
+        while (current!=null ){
+            ListNode tmp=current.next;
+            current.next=pre    ;
+            pre=current;
+            current=tmp;
+        }
+        return pre;
+    }
+
+    private ListNode merge(ListNode l1,ListNode l2){
+        if (l1==null){
+            return l2;
+        }
+        if (l2==null){
+            return l1;
+        }
+        ListNode f1=l1;
+        ListNode f2=l2;
+        ListNode dummy=new ListNode();
+        dummy.next=f1;
+        while (f1!=null && f2!=null ){
+             ListNode f1Next=f1.next;
+             f1.next=f2;
+             ListNode f2Next=f2.next;
+             if (f1Next!=null){
+                 f2.next=f1Next;
+             }
+             f1=f1Next;
+             f2=f2Next;
+        }
+
+        return dummy.next;
+    }
+
+    private ListNode findMid(ListNode head) {
+        ListNode slow=head;
+        ListNode fast=head;
+        while (fast!=null && fast.next!=null){
+            slow=slow.next;
+            fast=fast.next.next;
+        }
+        return slow;
+    }
+
+
+
+   /* private void merge(ListNode left, ListNode right) {
        while (right!=null){
         ListNode tmp=right.next;
         right.next=left.next;
@@ -76,7 +129,7 @@ class Solution {
             fast=fast.next.next;
         }
         return slow;
-    }
+    }*/
 
 
 }
