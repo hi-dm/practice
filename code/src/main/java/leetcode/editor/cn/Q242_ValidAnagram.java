@@ -52,6 +52,5 @@ public class Q242_ValidAnagram {
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
-
 }
  

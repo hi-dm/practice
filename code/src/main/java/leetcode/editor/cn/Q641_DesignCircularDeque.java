@@ -87,7 +87,7 @@ public class Q641_DesignCircularDeque {
          * Adds an item at the rear of Deque. Return true if the operation is successful.
          */
         public boolean insertLast(int value) {
-            if (rear == front && size == capacity) {
+            if (size >= capacity) {
                 return false;
             }
             myQueue[rear] = value;
@@ -100,11 +100,11 @@ public class Q641_DesignCircularDeque {
          * Deletes an item from the front of Deque. Return true if the operation is successful.
          */
         public boolean deleteFront() {
-            if (rear == front && size == 0) {
+            if (this.size <= 0) {
                 return false;
             }
             front = (front + 1) % capacity;
-            size--;
+            this.size--;
             return true;
         }
 
@@ -112,12 +112,11 @@ public class Q641_DesignCircularDeque {
          * Deletes an item from the rear of Deque. Return true if the operation is successful.
          */
         public boolean deleteLast() {
-            if (rear == front && size == 0) {
+            if (this.size <= 0) {
                 return false;
             }
-
             rear = (rear - 1 + capacity) % capacity;
-            size--;
+            this.size--;
             return true;
         }
 
@@ -125,7 +124,7 @@ public class Q641_DesignCircularDeque {
          * Get the front item from the deque.
          */
         public int getFront() {
-            if ((rear == front )&& size==0) {
+            if (this.size <= 0) {
                 return -1;
             }
             return myQueue[front];
@@ -135,24 +134,24 @@ public class Q641_DesignCircularDeque {
          * Get the last item from the deque.
          */
         public int getRear() {
-            if (rear == front && size==0) {
+            if (rear == front && size == 0) {
                 return -1;
             }
-            return myQueue[(rear-1+capacity)%capacity];
+            return myQueue[(rear - 1 + capacity) % capacity];
         }
 
         /**
          * Checks whether the circular deque is empty or not.
          */
         public boolean isEmpty() {
-            return rear == front && size == 0;
+            return this.size == 0;
         }
 
         /**
          * Checks whether the circular deque is full or not.
          */
         public boolean isFull() {
-            return rear == front && capacity == size;
+            return capacity == size;
         }
     }
 
