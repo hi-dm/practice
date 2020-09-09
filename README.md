@@ -49,8 +49,17 @@
 |✔️| 641| [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) | mid |被边界条件搞蒙了 还有rear 和 front 的意义不同 | |
 |️| 42| [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) | hard | 先放一放吧| |
 
- 
- 
+> 05课程 tree
+
+| 待办| 题号 | 题目 | 难度 |  date1 | date2 | 笔记 | 
+| --- | --- | --- | --- | --- | --- |--- |
+|️|94|[binary-tree-inorder-traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)| | || 
+|️|40|[zui-xiao-de-kge-shu-lcof](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof)| | || 
+|️|144|[binary-tree-preorder-traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)| | || 
+|️|590|[n-ary-tree-postorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal)| | || 
+|️|589|[n-ary-tree-preorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal)| | || 
+|️|429|[n-ary-tree-level-order-traversal](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal)| | || 
+
 笔记：
 
 1 nums1[p1+p2+1] = nums1[p1]>nums2[p2]?nums1[p1--]:nums2[p2--];
