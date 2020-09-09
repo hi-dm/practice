@@ -43,8 +43,8 @@ public class Q189_RotateArray{
         System.out.println(3/5);
         System.out.println(3%5);
 
-        Solution solution = new Q189_RotateArray().new Solution();
-        solution.rotate(new int[]{-1,-100,3,99},2);
+//        Solution solution = new Q189_RotateArray().new Solution();
+//        solution.rotate(new int[]{-1,-100,3,99},2);
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
@@ -52,19 +52,20 @@ class Solution {
         if (nums.length==0){
             return;
         }
-        k = k % nums.length;
+        k=k%nums.length;
         int count=0;
-        for (int start = 0; count <nums.length ; start++) {
-            int current=start;
-            int prev=nums[start];
+
+        for (int i = 0; count<nums.length; i++) {
+            int currentIndex=i;
+            int currentVal=nums[currentIndex];
             do{
-                int next=getTargetIndex(current,k,nums.length);
+                int next=getTargetIndex(currentIndex,k,nums.length);
                 int tmp=nums[next];
-                nums[next]=prev;
-                prev=tmp;
-                current=next;
+                nums[next]=currentVal;
+                currentIndex=next;
+                currentVal=tmp;
                 count++;
-            }while (start != current);
+            }while (i!=currentIndex && count<nums.length);
         }
     }
 
