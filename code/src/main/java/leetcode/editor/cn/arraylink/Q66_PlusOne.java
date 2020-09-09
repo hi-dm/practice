@@ -22,7 +22,7 @@
 // Related Topics 数组 
 // 👍 529 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:加一
 public class Q66_PlusOne {

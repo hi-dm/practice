@@ -16,7 +16,7 @@
 // Related Topics 数组 双指针 
 // 👍 668 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 //java:移动零
 public class Q283_MoveZeroes {
     public static void main(String[] args){

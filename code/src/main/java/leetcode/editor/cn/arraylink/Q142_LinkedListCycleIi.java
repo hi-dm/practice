@@ -42,9 +42,8 @@
 // Related Topics 链表 双指针 
 // 👍 568 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
-import java.util.HashMap;
 import java.util.HashSet;
 
 //java:环形链表 II

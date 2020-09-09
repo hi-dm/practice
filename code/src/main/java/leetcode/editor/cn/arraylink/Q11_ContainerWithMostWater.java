@@ -20,7 +20,7 @@
 // Related Topics 数组 双指针 
 // 👍 1648 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:盛最多水的容器
 public class Q11_ContainerWithMostWater {

@@ -12,7 +12,7 @@
 // Related Topics 链表 
 // 👍 1201 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:合并两个有序链表
 public class Q21_MergeTwoSortedLists {

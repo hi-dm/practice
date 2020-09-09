@@ -15,7 +15,7 @@
 // Related Topics 链表 
 // 👍 268 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 //java:重排链表
 public class Q143_ReorderList {
     public static void main(String[] args){

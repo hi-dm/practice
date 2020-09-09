@@ -16,7 +16,7 @@
 // Related Topics 数组 哈希表 
 // 👍 8807 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 import java.util.HashMap;
 import java.util.Map;

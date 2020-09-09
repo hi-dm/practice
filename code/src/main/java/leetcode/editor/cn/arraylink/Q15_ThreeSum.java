@@ -20,7 +20,7 @@
 // Related Topics 数组 双指针 
 // 👍 2433 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 import java.util.ArrayList;
 import java.util.Arrays;

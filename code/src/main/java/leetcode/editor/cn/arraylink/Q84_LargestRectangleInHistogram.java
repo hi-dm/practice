@@ -25,7 +25,7 @@
 // Related Topics 栈 数组 
 // 👍 856 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:柱状图中最大的矩形
 public class Q84_LargestRectangleInHistogram {

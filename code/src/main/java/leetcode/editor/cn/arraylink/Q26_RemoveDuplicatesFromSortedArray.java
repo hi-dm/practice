@@ -45,7 +45,7 @@
 // Related Topics 数组 双指针 
 // 👍 1563 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 //java:删除排序数组中的重复项
 public class Q26_RemoveDuplicatesFromSortedArray {
     public static void main(String[] args){

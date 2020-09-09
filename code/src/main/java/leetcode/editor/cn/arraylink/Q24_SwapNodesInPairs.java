@@ -13,7 +13,7 @@
 // Related Topics 链表 
 // 👍 571 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:两两交换链表中的节点
 public class Q24_SwapNodesInPairs {

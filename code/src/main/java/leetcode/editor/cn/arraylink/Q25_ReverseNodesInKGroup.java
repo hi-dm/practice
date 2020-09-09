@@ -27,7 +27,7 @@
 // Related Topics 链表 
 // 👍 667 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:K 个一组翻转链表
 public class Q25_ReverseNodesInKGroup {

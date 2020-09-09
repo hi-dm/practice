@@ -21,7 +21,7 @@
 // Related Topics 排序 哈希表 
 // 👍 237 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:有效的字母异位词
 public class Q242_ValidAnagram {

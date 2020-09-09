@@ -41,7 +41,7 @@
 // Related Topics 栈 设计 
 // 👍 642 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 import java.util.Stack;
 

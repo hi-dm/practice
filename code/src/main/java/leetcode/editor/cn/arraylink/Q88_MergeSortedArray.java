@@ -23,9 +23,7 @@
 // Related Topics 数组 双指针 
 // 👍 600 👎 0
 
-package leetcode.editor.cn;
-
-import java.util.Arrays;
+package leetcode.editor.cn.arraylink;
 
 //java:合并两个有序数组
 public class Q88_MergeSortedArray {

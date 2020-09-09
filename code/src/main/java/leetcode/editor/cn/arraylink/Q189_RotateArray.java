@@ -29,13 +29,7 @@
 // Related Topics 数组
 // 👍 652 👎 0
 
-package leetcode.editor.cn;
-
-import com.oracle.javafx.jmx.json.impl.JSONMessages;
-import jdk.nashorn.internal.parser.JSONParser;
-
-import java.util.HashSet;
-import java.util.Set;
+package leetcode.editor.cn.arraylink;
 
 //java:旋转数组
 public class Q189_RotateArray{

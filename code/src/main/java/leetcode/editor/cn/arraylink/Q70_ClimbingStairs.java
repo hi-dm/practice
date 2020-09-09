@@ -26,7 +26,7 @@
 // Related Topics 动态规划 
 // 👍 1163 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 //java:爬楼梯
 public class Q70_ClimbingStairs {
     public static void main(String[] args){

@@ -41,7 +41,7 @@
 // Related Topics 链表 双指针 
 // 👍 700 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:环形链表
 public class Q141_LinkedListCycle {

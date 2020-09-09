@@ -41,7 +41,7 @@
 // Related Topics 设计 队列 
 // 👍 55 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 
 //java:设计循环双端队列
 public class Q641_DesignCircularDeque {

@@ -12,7 +12,7 @@
 // Related Topics 链表 
 // 👍 1140 👎 0
 
-package leetcode.editor.cn;
+package leetcode.editor.cn.arraylink;
 //java:反转链表
 public class Q206_ReverseLinkedList {
     public static void main(String[] args){
