@@ -53,7 +53,7 @@
 
 | 待办| 题号 | 题目 | 难度 |  date1 | date2 | 笔记 | 
 | --- | --- | --- | --- | --- | --- |--- |
-|️|94|[binary-tree-inorder-traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)| | || 
+|️✔️|94|[binary-tree-inorder-traversal](https://leetcode-cn.com/problems/binary-tree-inorder-traversal)| 2020-09-09|多体会。。 || 
 |️|40|[zui-xiao-de-kge-shu-lcof](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof)| | || 
 |️|144|[binary-tree-preorder-traversal](https://leetcode-cn.com/problems/binary-tree-preorder-traversal)| | || 
 |️|590|[n-ary-tree-postorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal)| | || 
