@@ -48,6 +48,7 @@
 |️|  239| [sliding-window-maximum](https://leetcode-cn.com/problems/sliding-window-maximum/) | hard | | |
 |✔️| 641| [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) | mid |被边界条件搞蒙了 还有rear 和 front 的意义不同 | |
 |️| 42| [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) | hard | 先放一放吧| |
+|×️| 39| [combination-sum](https://leetcode-cn.com/problems/combination-sum) | mid | 被挂在了树上| |
 
 > 05课程 tree
 
