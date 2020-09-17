@@ -61,6 +61,8 @@
 |️|589|[n-ary-tree-preorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal)| | || 
 |️|429|[n-ary-tree-level-order-traversal](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal)| | || 
 |️|226|[invert-binary-tree](https://leetcode-cn.com/problems/invert-binary-tree)| 2020-09-16| 抄答案的时候 感觉挺容易的 || 
+|️|589|[n-ary-tree-preorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal)| 2020-09-17| 巧用两个栈|| 
+|️|590|[n-ary-tree-postorder-traversal](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal)| 2020-09-17| 巧用两个队列 || 
 
 笔记：
 
