@@ -12,6 +12,7 @@
 |✔️| 15|[ 3sum](https://leetcode-cn.com/problems/3sum/)  |easy|2020-06-24|需加强练习，注意边界，注意用i 还是nums[i],注意优化。|round3只错了一个边界，调试过了，有极大的进步
 |✔️| 1|[twosum](https://leetcode-cn.com/problems/two-sum) |easy|2020-08-03| 我们很容易想到用map，然后循环两次 ,却很少想起 一次就行| 之后不用刷了
 |✔️| 66|[plus-one](https://leetcode-cn.com/problems/plus-one) |easy|2020-08-03| 加1进位  digits = new int[digits.length + 1];  digits[0] = 1;
+|✔️| 151|[reverse-words-in-a-string](https://leetcode-cn.com/problems/reverse-words-in-a-string) |mid|2020-09-28| 正则 +trim
 
 
 > 03课程2 Linked List  
