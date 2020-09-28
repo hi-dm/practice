@@ -14,6 +14,7 @@
 |✔️| 66|[plus-one](https://leetcode-cn.com/problems/plus-one) |easy|2020-08-03| 加1进位  digits = new int[digits.length + 1];  digits[0] = 1;
 |✔️| 151|[reverse-words-in-a-string](https://leetcode-cn.com/problems/reverse-words-in-a-string) |mid|2020-09-28| 正则 +trim
 |✔️| 151|[reverse-words-in-a-string-iii](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii) |mid|分块，然后逐个append 
+|✔️| 27|[remove-element](https://leetcode-cn.com/problems/remove-element) |easy| 
 
 
 > 03课程2 Linked List  
