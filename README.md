@@ -13,6 +13,7 @@
 |✔️| 1|[twosum](https://leetcode-cn.com/problems/two-sum) |easy|2020-08-03| 我们很容易想到用map，然后循环两次 ,却很少想起 一次就行| 之后不用刷了
 |✔️| 66|[plus-one](https://leetcode-cn.com/problems/plus-one) |easy|2020-08-03| 加1进位  digits = new int[digits.length + 1];  digits[0] = 1;
 |✔️| 151|[reverse-words-in-a-string](https://leetcode-cn.com/problems/reverse-words-in-a-string) |mid|2020-09-28| 正则 +trim
+|✔️| 151|[reverse-words-in-a-string-iii](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii) |mid|分块，然后逐个append 
 
 
 > 03课程2 Linked List  
@@ -51,6 +52,7 @@
 |✔️| 641| [design-circular-deque](https://leetcode-cn.com/problems/design-circular-deque/) | mid |被边界条件搞蒙了 还有rear 和 front 的意义不同 | |
 |️| 42| [trapping-rain-water](https://leetcode-cn.com/problems/trapping-rain-water/) | hard | 先放一放吧| |
 |×️| 39| [combination-sum](https://leetcode-cn.com/problems/combination-sum) | mid | 被挂在了树上| |
+|✔| 917| [reverse-only-letters](https://leetcode-cn.com/problems/reverse-only-letters) | easy | 巧用栈倒序 秒啊| |
 
 > 05课程 tree
 
