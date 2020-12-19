@@ -20,6 +20,7 @@ public class Q_offer_40 {
             }
         }
 
+
         int[] result=new int[k];
         int i=0;
        for (Integer p:pq){
