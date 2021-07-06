@@ -19,6 +19,7 @@ public class Test {
         System.out.println("消费者不需要更多数据了。");
 
         //一旦消费不需要更多数据了，我们应该让生产者也停下来，但是实际情况却停不下来(没有打印出生产者结束运行)
+        //thread.interrupt()，通知线程中断； 2.线程内逻辑需配合响应中断：1）正常执行循环中使用 Thread.currentThread().isInterrupted()判断中断标识;
         producer.canceled = true;
         System.out.println(producer.canceled);
     }
