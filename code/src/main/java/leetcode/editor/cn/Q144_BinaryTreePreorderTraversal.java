@@ -38,18 +38,18 @@ public class Q144_BinaryTreePreorderTraversal{
 
 class Solution {
     public List<Integer> preorderTraversal(TreeNode root) {
-        List<Integer> res=new ArrayList<>();
-        inorder(root,res);
-        return res;
+        ArrayList<Integer> list= new ArrayList<>();
+        inorder(root,list);
+       return list;
     }
 
     private void inorder(TreeNode treeNode,List<Integer> res){
-        if (treeNode==null){
-            return;
-        }
-        res.add(treeNode.val);
-        inorder(treeNode.left,res);
-        inorder(treeNode.right,res);
+         if (null==treeNode){
+             return;
+         }
+         res.add(treeNode.val);
+         inorder(treeNode.left,res);
+         inorder(treeNode.right,res);
     }
 
 }

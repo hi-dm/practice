@@ -55,7 +55,8 @@ package leetcode.editor.cn;
 //java:移除元素
 public class Q27_RemoveElement {
     public static void main(String[] args) {
-        Solution solution = new Q27_RemoveElement().new Solution();
+
+
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
