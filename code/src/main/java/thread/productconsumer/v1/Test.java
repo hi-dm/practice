@@ -1,4 +1,4 @@
-package thread.productconsumer;
+package thread.productconsumer.v1;
 
 import java.util.concurrent.ArrayBlockingQueue;
 
