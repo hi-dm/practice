@@ -1,5 +1,8 @@
 package jvm;
 
+/**
+ * 45讲
+ */
 public class OldGCTest {
     public static void main(String[] args) {
         byte[] array1 = new byte[2 * 1024 * 1024];
